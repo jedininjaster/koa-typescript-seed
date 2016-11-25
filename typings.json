@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "koa": "registry:npm/koa#2.0.0+20161018080506",
+    "rethinkdb": "registry:npm/rethinkdb#2.3.0+20161026223202"
+  },
+  "globalDependencies": {
+    "node": "registry:dt/node#6.0.0+20161110151007"
+  }
+}

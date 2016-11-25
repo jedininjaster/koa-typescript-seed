@@ -2,7 +2,8 @@
  
 import * as KoaRouter from 'koa-router';
 import v0Router from './v0';
-let FB = require('fb'); //need tsd files
+import {Context} from "~koa/lib/context";
+let FB = require('fb');
 
 let apiRouter = new KoaRouter();
 
@@ -13,9 +14,9 @@ apiRouter.get('/info', async function(ctx, next) {
 
 apiRouter.use('/v0', v0Router.routes());
 
-apiRouter.post('/test', async function(ctx, next) {
+apiRouter.post('/test', async function(ctx: Context, next) {
   await next();
-  let token = ctx.request.body.token;
+  let token = ctx.body.token;
   let options = {
     appId: '1615979615386841',
     accessToken: token,
