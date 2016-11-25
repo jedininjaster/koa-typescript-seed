@@ -1,0 +1,5 @@
+1. explore social media sign options
+  a. method of signing in
+  b. response objects
+  c. how to infer friendship
+  d. how to structure data

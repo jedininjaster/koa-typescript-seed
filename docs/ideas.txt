@@ -1,0 +1,36 @@
+user
+  userId: guid
+  pinterestId
+  name: String
+  friends: [user]
+  email: String
+
+game
+  winner: user
+  rounds: [round]
+  mode: 'firstToX', 'bestOutOfX'
+  modeCount: Number
+
+round
+  winner: user
+  winningPin: pin
+  board: board
+  boardPicker: user
+  submissions: [submission]
+  index: Number (the index of the round in the array of rounds for the game)
+
+submission
+  pin: pin
+  submittedBy: user
+
+board
+  pinterestBoardId
+
+pin
+  pinterestPinId
+
+account?
+  type: 'pinterest', 'facebook'?
+  email:
+  id:
+  ...?

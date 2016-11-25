@@ -1,0 +1,34 @@
+{
+  "name": "hello-koa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babelBuild": "babel src -d babelTranspiled",
+    "typescriptBuild": "tsc",
+    "start": "node typescriptTranspiled/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "fb": "^1.1.1",
+    "koa": "^2.0.0",
+    "koa-bodyparser": "^3.1.0",
+    "koa-router": "^7.0.1",
+    "orientjs": "^2.2.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-plugin-transform-async-to-generator": "^6.8.0",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-changed": "^1.3.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-typescript": "^2.13.6"
+  }
+}
